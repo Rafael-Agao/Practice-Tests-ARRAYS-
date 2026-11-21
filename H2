@@ -1,0 +1,22 @@
+def find(items, target):
+    for i in range(len(items)):
+        if items[i] = target:
+            return i
+    return -1
+
+books = []
+copies = []
+
+for i in range(3):
+    name = input("Title: ")
+    amount = int(input("Copies: "))
+    books.append(name)
+    copies.append(amount)
+
+search = input("Search title: ")
+position = find(books, search)
+
+if position >= 0:
+    print(search, "has", copies[position], "copies")
+else:
+    print("Not in the library")
