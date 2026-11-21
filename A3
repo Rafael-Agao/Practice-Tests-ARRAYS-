@@ -1,0 +1,13 @@
+scores = []
+
+for x in range(5):
+    score = int(input("Score: "))
+    scores.append(score)
+
+passed = 0
+
+for score in scores:
+    if score >= 75:
+        passed += 1
+
+print(passed, "of 5 passed")
