@@ -1,0 +1,21 @@
+def find(items, target):
+    for i in range(len(items)):
+        if items[i] == target:
+            return i
+    return -1
+
+members = []
+
+while True:
+    name = input("Member (done to stop): ")
+    if name == "done":
+        break
+    members.append(name)
+
+search = input("Look for: ")
+number = find(members, search)
+
+if number >= 0:
+    print(search, "is member number", number + 1)
+else:
+    print(search, "is not a member")
