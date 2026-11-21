@@ -1,0 +1,15 @@
+scores = []
+
+for x in range(5):
+    score = int(input("Score: "))
+    scores.append(score)
+
+total = 0
+
+for score in scores:
+    total += score
+
+average = total / 5
+
+print("Total:", total)
+print("Average:", average)
