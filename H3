@@ -1,0 +1,21 @@
+def count(items, target):
+    votes = 0
+
+    for name in items:
+        if name = target:
+        votes = votes + 1
+
+    return votes
+
+names = []
+
+while True:
+    vote = input("Vote (done to stop): ")
+    if vote == "done":
+        break
+    names.append(vote)
+
+candidate = input("Candidate: ")
+total = count(names, candidate)
+
+print(candidate, "got", total, "votes")
